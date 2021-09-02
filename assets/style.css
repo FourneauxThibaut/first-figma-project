@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather");
+* {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+mark {
+  color: #F78065;
+  background-color: transparent;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+header {
+  background-image: url(./storage/women_at_work.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 650px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+main .heroes {
+  -webkit-transform: translateZ(-200px);
+          transform: translateZ(-200px);
+  margin: -19% 0 0 5%;
+  padding: 7% 5% 0 5%;
+  width: 51%;
+  min-height: 537px;
+  background-color: #FFFFFFFF;
+  -webkit-box-shadow: 0px 4px 100% black;
+          box-shadow: 0px 4px 100% black;
+  z-index: 2;
+}
+
+main .heroes > * {
+  width: 87%;
+}
+
+main .heroes h1 {
+  font-size: 39px;
+}
+
+main .heroes p {
+  margin-top: 5%;
+  font-size: 20px;
+  opacity: 60%;
+}
+
+main .heroes div {
+  display: block;
+  width: 35%;
+  margin: 5% 0;
+  background-color: #F78065;
+}
+
+main .heroes div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 17px 0;
+  color: #FFFFFFFF;
+  font-size: 18px;
+}
+
+main .heroes div a img {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
