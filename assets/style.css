@@ -36,7 +36,7 @@ mark {
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
@@ -58,9 +58,8 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 85%;
   margin: 0 auto;
-  padding-top: 15px;
+  padding: 25px 8% 0 9%;
 }
 
 main .heroes {
@@ -71,8 +70,8 @@ main .heroes {
   width: 51%;
   min-height: 537px;
   background-color: #FFFFFFFF;
-  -webkit-box-shadow: 0px 4px 100% black;
-          box-shadow: 0px 4px 100% black;
+  -webkit-box-shadow: 0px 4px 100px rgba(37, 37, 37, 0.1);
+          box-shadow: 0px 4px 100px rgba(37, 37, 37, 0.1);
   z-index: 2;
 }
 
@@ -114,5 +113,99 @@ main .heroes div a {
 
 main .heroes div a img {
   margin: 0 10px;
+}
+
+main .articles-container {
+  margin: 6% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .articles-container article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 26%;
+          flex: 0 1 26%;
+  padding: 50px;
+}
+
+main .articles-container article img {
+  margin-bottom: 70px;
+}
+
+main .articles-container article h2 {
+  font-size: 24px;
+}
+
+main .articles-container article p {
+  padding: 25px 0;
+  font-size: 16px;
+  opacity: 50%;
+}
+
+main .articles-container article a {
+  color: #F78065;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main .products-container {
+  margin: 0 auto;
+  width: 93%;
+}
+
+main .products-container h2 {
+  font-size: 36px;
+  padding: 15px 75px;
+  font-weight: bold;
+}
+
+main .products-container .product-list {
+  margin: 6% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .products-container .product-list article {
+  position: relative;
+  height: 270px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 19.23%;
+          flex: 0 1 19.23%;
+}
+
+main .products-container .product-list article img {
+  width: 10%;
+  height: auto;
+}
+
+main .products-container .product-list article h3 {
+  margin: 60px 0 40px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .products-container .product-list article p {
+  width: 80%;
+  font-size: 14px;
+}
+
+main .products-container .product-list article a {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: #F78065;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

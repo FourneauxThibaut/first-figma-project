@@ -37,7 +37,7 @@ mark{
 }
 
 body{
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
@@ -55,9 +55,8 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 85%;
             margin: 0 auto;
-            padding-top: 15px;
+            padding: 25px 8% 0 9%;
         }
     }
 }
@@ -70,7 +69,7 @@ main{
         width: 51%;
         min-height: 537px;
         background-color: #FFFFFFFF;
-        box-shadow: 0px 4px 100% rgba(0, 0, 0, 10%);
+        box-shadow: 0px 4px 100px rgba(37, 37, 37, 0.1);
         z-index: 2;
 
         >*{
@@ -105,4 +104,81 @@ main{
             }
         }
     }
+    .articles-container{
+
+        margin: 6% 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        article{
+            
+            flex: 0 1 26%;
+            padding: 50px;
+
+            img{
+                margin-bottom: 70px;
+            }
+
+            h2{
+                font-size: 24px;
+            }
+
+            p{
+                padding: 25px 0;
+                font-size: 16px;
+                opacity: 50%;
+            }
+
+            a{
+                color: $main-color;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+    .products-container{
+        margin: 0 auto;
+        width: 93%;
+
+        h2{
+            font-size: 36px;
+            padding: 15px 75px;
+            font-weight: bold;
+        }
+
+        .product-list{
+            margin: 6% 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+            article{
+                position: relative;
+                height: 270px;
+                flex: 0 1 19.23%;
+
+                img{
+                    width: 10%;
+                    height: auto;
+                }
+                h3{
+                    margin: 60px 0 40px 0;
+                    font-size: 22px;
+                    font-weight: bold;                
+                }
+                p{
+                    width: 80%;
+                    font-size: 14px;
+                }
+                a{
+                    position: absolute;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: $main-color;
+                    bottom: 0;
+                }
+            }
+        }
+    }          
 }
