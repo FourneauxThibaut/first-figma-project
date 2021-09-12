@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather');
 
 $main-color: #F78065;
+$main-dark-color: #c2634e;
+$footer-background: #f7f7f7;
 
 *{
     outline: none;
@@ -89,6 +91,12 @@ main{
             width: 35%;
             margin: 5% 0;
             background-color: $main-color;
+            transition-duration: 0.7s;
+
+            &:hover{
+                background-color: $main-dark-color;
+                transition-duration: 0.4s;
+            }
             
             a{
                 display: flex;
@@ -134,6 +142,13 @@ main{
                 color: $main-color;
                 font-weight: bold;
                 font-size: 18px;
+                transition-duration: 0.7s;
+
+                &:hover{
+                    color: $main-dark-color;
+                    transition-duration: 0.4s;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -156,7 +171,7 @@ main{
             article{
                 position: relative;
                 height: 270px;
-                flex: 0 1 19.23%;
+                flex: 0 1 20%;
 
                 img{
                     width: 10%;
@@ -177,8 +192,233 @@ main{
                     font-weight: bold;
                     color: $main-color;
                     bottom: 0;
+                    transition-duration: 0.7s;
+
+                    &:hover{
+                        color: $main-dark-color;
+                        transition-duration: 0.4s;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
-    }          
+    }   
+    .community-container{
+        width: 92%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        article{
+
+            &:first-child{
+                width: 32%;
+
+                h2{
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+
+                & > *{
+                    width: 80%;
+                }
+
+                p{
+                    width: 70%;
+                    font-size: 18px;
+                    margin: 30px 0;
+                }
+
+                .button{
+                    width: 60%;
+                    background-color: $main-color;
+                    transition-duration: 0.7s;
+
+                    &:hover{
+                        background-color: $main-dark-color;
+                        transition-duration: 0.4s;
+                    }
+
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
+                        vertical-align: baseline;
+                        padding: 19.5px 0;
+                        
+                        img{
+                            width: 10%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            &:not(:first-child){
+                width: 17%;
+                
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+
+                h3{
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
+
+                p{
+                    margin: 9px 0;
+                    font-size: 14px;
+                }
+                
+                a{
+                    font-size: 18px;
+                    color: $main-color;
+                    transition-duration: 0.7s;
+
+                    &:hover{
+                        color: $main-dark-color;
+                        transition-duration: 0.4s;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .advantage-container{
+        width: 92%;
+        margin: 90px auto;
+
+        h2{
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            article{
+               flex: 0 1 30%;
+               height: 290px;
+               position: relative;
+
+                div{
+                    margin: 45px auto;
+
+                    img{
+                        width: 8%;
+                        height: auto;
+                    }
+
+                    h3{
+                        margin-top: 10px;
+                        font-size: 22px;
+                        font-weight: bold;
+                        width: 82%;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                }
+            } 
+        }
+    }
+}
+footer{
+    padding: 90px 0 45px 0;
+    background-color: $footer-background;
+
+    .footer-information-container{
+        width: 91%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgrey;
+
+        section{
+
+            &:first-child{
+                width: 30%;
+
+                h2{
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                h3{
+                    font-size: 48px;
+                    font-weight: bold;
+                    width: 45%;
+                    margin: 15px 0 60px 0;
+                }
+            }
+            &:not(:first-child){
+                width: 20%;
+
+                li{
+                    margin-bottom: 15px;
+                }
+
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                a{
+                    font-size: 14px;
+                    color: black;
+                    transition-duration: 0.7s;
+
+                    &:hover{
+                        color: $main-color;
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .footer-links{
+        width: 90%;
+        margin: 30px auto 0;
+
+        display: flex;
+        justify-content: space-between;
+
+        section{
+
+            &:first-child{
+                width: 57%;
+                p{
+                    font-size: 14px;
+                }
+            }
+            &:not(:first-child){
+                width: 43%;
+                display: flex;
+                justify-content: space-between;
+
+                a{
+                    font-size: 14px;
+                    color: black;
+                    transition-duration: 0.7s;
+
+                    &:hover{
+                        color: $main-color;
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+        }
+    }
 }

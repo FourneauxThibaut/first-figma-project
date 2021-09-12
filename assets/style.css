@@ -94,6 +94,14 @@ main .heroes div {
   width: 35%;
   margin: 5% 0;
   background-color: #F78065;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+main .heroes div:hover {
+  background-color: #c2634e;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 main .heroes div a {
@@ -152,6 +160,15 @@ main .articles-container article a {
   color: #F78065;
   font-weight: bold;
   font-size: 18px;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+main .articles-container article a:hover {
+  color: #c2634e;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  text-decoration: underline;
 }
 
 main .products-container {
@@ -181,8 +198,8 @@ main .products-container .product-list article {
   position: relative;
   height: 270px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 19.23%;
-          flex: 0 1 19.23%;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
 }
 
 main .products-container .product-list article img {
@@ -207,5 +224,274 @@ main .products-container .product-list article a {
   font-weight: bold;
   color: #F78065;
   bottom: 0;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+main .products-container .product-list article a:hover {
+  color: #c2634e;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  text-decoration: underline;
+}
+
+main .community-container {
+  width: 92%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .community-container article:first-child {
+  width: 32%;
+}
+
+main .community-container article:first-child h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+main .community-container article:first-child > * {
+  width: 80%;
+}
+
+main .community-container article:first-child p {
+  width: 70%;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+main .community-container article:first-child .button {
+  width: 60%;
+  background-color: #F78065;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+main .community-container article:first-child .button:hover {
+  background-color: #c2634e;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+main .community-container article:first-child .button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: baseline;
+  padding: 19.5px 0;
+}
+
+main .community-container article:first-child .button a img {
+  width: 10%;
+  height: auto;
+}
+
+main .community-container article:not(:first-child) {
+  width: 17%;
+}
+
+main .community-container article:not(:first-child) img {
+  width: 100%;
+  height: auto;
+}
+
+main .community-container article:not(:first-child) h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+main .community-container article:not(:first-child) p {
+  margin: 9px 0;
+  font-size: 14px;
+}
+
+main .community-container article:not(:first-child) a {
+  font-size: 18px;
+  color: #F78065;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+main .community-container article:not(:first-child) a:hover {
+  color: #c2634e;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  text-decoration: underline;
+}
+
+main .advantage-container {
+  width: 92%;
+  margin: 90px auto;
+}
+
+main .advantage-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+main .advantage-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .advantage-container div article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  height: 290px;
+  position: relative;
+}
+
+main .advantage-container div article div {
+  margin: 45px auto;
+}
+
+main .advantage-container div article div img {
+  width: 8%;
+  height: auto;
+}
+
+main .advantage-container div article div h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 82%;
+}
+
+main .advantage-container div article div p {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer {
+  padding: 90px 0 45px 0;
+  background-color: #f7f7f7;
+}
+
+footer .footer-information-container {
+  width: 91%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+footer .footer-information-container section:first-child {
+  width: 30%;
+}
+
+footer .footer-information-container section:first-child h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer .footer-information-container section:first-child h3 {
+  font-size: 48px;
+  font-weight: bold;
+  width: 45%;
+  margin: 15px 0 60px 0;
+}
+
+footer .footer-information-container section:not(:first-child) {
+  width: 20%;
+}
+
+footer .footer-information-container section:not(:first-child) li {
+  margin-bottom: 15px;
+}
+
+footer .footer-information-container section:not(:first-child) h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .footer-information-container section:not(:first-child) a {
+  font-size: 14px;
+  color: black;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+footer .footer-information-container section:not(:first-child) a:hover {
+  color: #F78065;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+footer .footer-links {
+  width: 90%;
+  margin: 30px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-links section:first-child {
+  width: 57%;
+}
+
+footer .footer-links section:first-child p {
+  font-size: 14px;
+}
+
+footer .footer-links section:not(:first-child) {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-links section:not(:first-child) a {
+  font-size: 14px;
+  color: black;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+footer .footer-links section:not(:first-child) a:hover {
+  color: #F78065;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */
